@@ -27,10 +27,10 @@ for timeFrame in timeFrames:
                     f.write(content + 'n')  # write content
             test_done= True #end loop
         else:
-            with open("test.from", 'a', encoding='utf8') as f:
+            with open("test.to", 'a', encoding='utf8') as f:
                 for content in df['parent'].values:
                     f.write(content + 'n')  # write content
-            with open("test.from", 'a', encoding='utf8') as f:
+            with open("test.to", 'a', encoding='utf8') as f:
                 for content in df['comment'].values:
                     f.write(content + 'n')  # write content
         counter +=1
